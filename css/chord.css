@@ -15,4 +15,7 @@ body, html{
 	padding: 10px;
 	background: white;
 	text-align: center;
+	color: #666666;
+	font-family: 'Lucida Grande', verdana, sans-serif;
+	font-size: 14px;
 }
