@@ -7,8 +7,6 @@
 
 	<script type="text/paperscript" canvas="myCanvas">
 
-
-
 		var keyData = {
 			q: {
 				sound: new Howl({
@@ -82,7 +80,7 @@
 				}),
 				color: '#e67e22'
 			},
-				d: {
+			d: {
 				sound: new Howl({
 		  		src: ['sounds/piston-2.mp3']
 				}),
@@ -165,6 +163,12 @@
 		  		src: ['sounds/moon.mp3']
 				}),
 				color: '#2c3e50'
+			},
+			space: {
+				sound: new Howl({
+		  		src: ['sounds/moon.mp3']
+				}),
+				color: '#2c3e50'
 			}
 		}
 
@@ -172,6 +176,7 @@
 		var circles = [];
 
 		function onKeyDown(event) {
+			console.log(event.key)
 			if(keyData[event.key]){
 				var maxPoint = new Point(view.size.width, view.size.height);
 				var randomPoint = Point.random();
