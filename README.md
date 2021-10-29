@@ -8,5 +8,5 @@ I have tried to make it using howler.js audio library for modern web and paper.j
 -- Paper.js
 
 ## Setup
--- Just clone this repository and rename the index.md file to index.html and you are good to go.
+-- Just clone this repository and run the index.html file and you are good to go.
 -- Hope you enjoyed this work.
