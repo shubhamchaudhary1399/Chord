@@ -189,8 +189,8 @@
 		}
 
 		function onMouseDown(event) {
-			const characters = 'abcdefghijklmnopqrstuvwxyz';
-			const charactersLength = characters.length;
+			var characters = 'abcdefghijklmnopqrstuvwxyz';
+			var charactersLength = characters.length;
 			event.key = characters.charAt(Math.floor(Math.random() * charactersLength));
 			console.log(event.key)
 			if(keyData[event.key]){
