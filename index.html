@@ -189,7 +189,9 @@
 		}
 
 		function onMouseDown(event) {
-			event.key = 'q';
+			const characters = 'abcdefghijklmnopqrstuvwxyz';
+			const charactersLength = characters.length;
+			event.key = characters.charAt(Math.floor(Math.random() * charactersLength));
 			console.log(event.key)
 			if(keyData[event.key]){
 				var maxPoint = new Point(view.size.width, view.size.height);
@@ -219,12 +221,7 @@
 
 </head>
 <body>
-	<h3 id="heading">
-		<span>Press any key, A to Z or spacebar, and turn up speakers</span>
-		<span style="float: right">
-			<input class="button-17" id="button-keyShubh" type="text" value="Keyboard">
-		</span>
-	</h3>
+	<h3 id="heading">Press any key, A to Z or spacebar, and turn up speakers</h3>
 	<canvas id="myCanvas" resize></canvas>
 </body>
 </html>
